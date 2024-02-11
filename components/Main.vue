@@ -29,7 +29,7 @@
         alt="my-contacts"
       />
       <h3
-        class="font-raleway font-bold text-2xl whitespace-pre-wrap break-words"
+        class="font-raleway font-bold text-xl whitespace-pre-wrap break-words"
         title="Моё резюме и GitHub"
       >
         Моё резюме и GitHub
@@ -75,7 +75,7 @@
         alt="my-contacts"
       />
       <h3
-        class="font-raleway font-bold text-2xl whitespace-pre-wrap break-words"
+        class="font-raleway font-bold text-xl whitespace-pre-wrap break-words"
         title="Связь со мной"
       >
         Связь со мной
@@ -136,7 +136,7 @@
         alt="my-office"
       />
       <h3
-        class="font-raleway font-bold text-2xl whitespace-nowrap break-words text-ellipsis overflow-hidden ml-2"
+        class="font-raleway font-bold text-xl whitespace-nowrap break-words text-ellipsis overflow-hidden ml-2"
         title="Над чем сейчас работаю"
       >
         Над чем сейчас работаю
@@ -170,10 +170,10 @@
         alt="my-office"
       />
       <h3
-        class="font-raleway font-bold text-2xl whitespace-nowrap break-words text-ellipsis overflow-hidden ml-2"
+        class="font-raleway font-bold text-xl text-ellipsis overflow-hidden ml-2"
         title="Компании c которыми работал/работаю"
       >
-        Компании c которыми работал/работаю
+        Компании c которыми работал или работаю
       </h3>
     </div>
     <div class="flex flex-row items-center mt-2">
