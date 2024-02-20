@@ -4,7 +4,7 @@
   >
     <div class="flex flex-row items-center">
       <img
-        id="navbar-image"
+        id="siba-inu-two"
         class="h-6 w-6 select-none pointer-events-none"
         src="/siba.svg"
         alt="siba-inu-two"
@@ -12,18 +12,21 @@
       <h1
         class="font-raleway font-bold text-2xl whitespace-pre-wrap break-words"
       >
-        Ivan Kazakov
+        Иван Казаков
       </h1>
     </div>
-    <div class="flex flex-row border-b-[1px] pb-2 font-raleway">
+    <div class="flex flex-row font-raleway">
       <div>
         Я Fullstack Developer с общим стажем в разработке и проектировании
         больше 4-х лет!
       </div>
     </div>
+    <div class="flex flex-row font-raleway mt-2 border-b-[1px] pb-2">
+      Языки программирования которые использую для решения технических задач: JavaScript, TypeScript, NodeJS!
+    </div>
     <div class="flex flex-row items-center mt-10 border-b-[1px] pb-2">
       <img
-        id="navbar-image"
+        id="my-contacts"
         class="h-6 w-6 select-none pointer-events-none"
         src="/user.png"
         alt="my-contacts"
@@ -37,7 +40,7 @@
     </div>
     <div class="flex flex-row items-center mt-2">
       <img
-        id="navbar-image"
+        id="my-github"
         class="h-6 w-6 select-none pointer-events-none"
         src="/github.svg"
         alt="my-github"
@@ -53,7 +56,7 @@
     </div>
     <div class="flex flex-row items-center mt-2 border-b-[1px] pb-2">
       <img
-        id="navbar-image"
+        id="my-resume"
         class="h-6 w-6 select-none pointer-events-none"
         src="/resume.png"
         alt="my-resume"
@@ -69,7 +72,7 @@
     </div>
     <div class="flex flex-row items-center mt-10 border-b-[1px] pb-2">
       <img
-        id="navbar-image"
+        id="my-contacts"
         class="h-6 w-6 select-none pointer-events-none"
         src="/contacts.svg"
         alt="my-contacts"
@@ -83,7 +86,7 @@
     </div>
     <div class="flex flex-row items-center mt-2">
       <img
-        id="navbar-image"
+        id="my-gmail"
         class="h-6 w-6 select-none pointer-events-none"
         src="/gmail.svg"
         alt="my-gmail"
@@ -98,7 +101,7 @@
     </div>
     <div class="flex flex-row items-center mt-2">
       <img
-        id="navbar-image"
+        id="my-vk"
         class="h-6 w-6 select-none pointer-events-none"
         src="/vk.svg"
         alt="my-vk"
@@ -114,7 +117,7 @@
     </div>
     <div class="flex flex-row items-center mt-2 border-b-[1px] pb-2">
       <img
-        id="navbar-image"
+        id="my-telegram"
         class="h-6 w-6 select-none pointer-events-none"
         src="/telegram.svg"
         alt="my-telegram"
@@ -130,10 +133,10 @@
     </div>
     <div class="flex flex-row items-center mt-10 border-b-[1px] pb-2">
       <img
-        id="navbar-image"
+        id="working-now"
         class="h-6 w-6 select-none pointer-events-none"
         src="/office.png"
-        alt="my-office"
+        alt="working-now"
       />
       <h3
         class="font-raleway font-bold text-xl whitespace-nowrap break-words text-ellipsis overflow-hidden ml-2"
@@ -144,10 +147,10 @@
     </div>
     <div class="flex flex-row items-center mt-2">
       <img
-        id="navbar-image"
+        id="freelance-finder-image"
         class="h-6 w-6 select-none pointer-events-none"
         src="/ff.jpg"
-        alt="my-telegram"
+        alt="freelance-finder-image"
       />
       <NuxtLink
         to="https://vk.com/freelance.finder"
@@ -159,15 +162,15 @@
       </NuxtLink>
     </div>
     <div class="flex flex-row font-raleway mt-2 border-b-[1px] pb-2">
-      Freelance Finder - молодая freelance биржа в России! Это удобная площадка
-      как для специалистов, так и для заказчиков!
+      Freelance Finder - это удобная площадка
+      как для специалистов, так и для заказчиков, позволяющая комфортно работать и зарабатывать!
     </div>
     <div class="flex flex-row items-center mt-10 border-b-[1px] pb-2">
       <img
-        id="navbar-image"
+        id="my-companies"
         class="h-6 w-6 select-none pointer-events-none"
         src="/project.png"
-        alt="my-office"
+        alt="my-companies"
       />
       <h3
         class="font-raleway font-bold text-xl text-ellipsis overflow-hidden ml-2"
@@ -178,10 +181,10 @@
     </div>
     <div class="flex flex-row items-center mt-2">
       <img
-        id="navbar-image"
+        id="sber-tech"
         class="h-6 w-6 select-none pointer-events-none"
         src="/sber.jpg"
-        alt="my-telegram"
+        alt="sber-tech"
       />
       <NuxtLink
         to="https://sbertech.ru/"
@@ -193,24 +196,32 @@
       </NuxtLink>
     </div>
     <div class="flex flex-row font-raleway mt-2">
-      Занимался выполнением задачи поставленные SberTech из аутсорсинговой компании RuNetSoft
-      на доработку интерфейса сайта Школы 21 Сбер Образование
+      Разработка некоторых компонентов серверной части на NodeJS для платформ: Школа 21 и Сбер Муза!
     </div>
-    <div class="flex flex-row font-raleway mt-2 border-b-[1px] pb-2">
+    <div class="flex flex-row font-raleway mt-2">
       <NuxtLink
         tag="a"
         to="https://21-school.ru/"
         target="_blank"
         class="font-raleway hover:underline hover:underline-offset-4 text-[rgba(55,53,47,.4)] cursor-pointer"
-        >https://21-school.ru/</NuxtLink
+        >Школа 21</NuxtLink
+      >
+    </div>
+    <div class="flex flex-row font-raleway mt-2 border-b-[1px] pb-2">
+      <NuxtLink
+        tag="a"
+        to="https://muse.edutoria.ru/"
+        target="_blank"
+        class="font-raleway hover:underline hover:underline-offset-4 text-[rgba(55,53,47,.4)] cursor-pointer"
+        >Сбер Муза</NuxtLink
       >
     </div>
     <div class="flex flex-row items-center mt-2">
       <img
-        id="navbar-image"
+        id="monitel"
         class="h-6 w-6 select-none pointer-events-none"
         src="/electricity.png"
-        alt="my-telegram"
+        alt="monitel"
       />
       <NuxtLink
         to="https://monitel.ru/"
@@ -243,10 +254,10 @@
     </div>
     <div class="flex flex-row items-center mt-2">
       <img
-        id="navbar-image"
+        id="redsoft"
         class="h-6 w-6 select-none pointer-events-none"
         src="/company.png"
-        alt="my-telegram"
+        alt="redsoft"
       />
       <NuxtLink
         to="https://redsoft.ru/"
@@ -265,7 +276,7 @@
       Занимался развитием основных сайтов для ОТП Банка, Уралсиб Банка и личного кабинета пользователя НПФ «САФМАР»
     </div>
     <div class="flex flex-row font-raleway mt-1">
-      Занимались созданием внутреннего инструмента для динамической генерации обложки продукции компании Coca-Cola! На стеке Java + VueJS!
+      Принимал участие в создании внутреннего инструмента для динамической генерации обложки продукции компании Coca-Cola! На стеке Java + VueJS!
     </div>
     <div class="flex flex-row font-raleway mt-1">
       Занимался созданием интернет магазина компании для продажи электронной техники! На фреймворке NuxtJS 2.0 + VueJS 2.0
@@ -299,10 +310,10 @@
     </div>
     <div class="flex flex-row items-center mt-2">
       <img
-        id="navbar-image"
+        id="web-cosmos"
         class="h-6 w-6 select-none pointer-events-none"
         src="/cosmos.png"
-        alt="my-telegram"
+        alt="web-cosmos"
       />
       <NuxtLink
         to="https://webcosmos.ru/"
@@ -319,7 +330,7 @@
     <div class="flex flex-row font-raleway mt-2">
       Принимал участие в развитии системы дистанционного образования "СДО PRO" проект не получил жизнь!
     </div>
-    <div class="flex flex-row font-raleway mt-2 mb-14">
+    <div class="flex flex-row font-raleway mt-2 mb-14 border-b-[1px] pb-2">
       Занимался разработкой простых лендингов и одностраничных сайтов визиток с использованием HTML, CSS, Bitrix CMS
     </div>
   </div>

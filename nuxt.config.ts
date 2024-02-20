@@ -8,7 +8,7 @@ export default defineNuxtConfig({
   css: ['~/assets/scss/styles.scss'],
   app: {
     head: {
-      link: [{ rel: "icon", type: "image/svg", href: "/favicon.svg" }],
+      link: [{ rel: "icon", type: "image/svg", href: "/siba.svg" }],
       htmlAttrs: {
         lang: "ru",
       },
@@ -41,5 +41,11 @@ export default defineNuxtConfig({
       tailwindcss: {},
       autoprefixer: {},
     },
+  },
+  devServer: {
+    https: {
+      key: 'localhost-key.pem',
+      cert: 'localhost.pem'
+    }
   },
 })

@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-app",
+  "name": "ivan-kazakov-personal-website",
   "private": true,
   "type": "module",
   "scripts": {
@@ -7,9 +7,7 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare",
-    "create:https:certs": "dotnet dev-certs https --export-path ./devcert.pem --no-password --format PEM",
-    "dev:https": "set NODE_TLS_REJECT_UNAUTHORIZED=1 && nuxt dev --https --ssl-cert devcert.pem --ssl-key devcert.key"
+    "postinstall": "nuxt prepare"
   },
   "devDependencies": {
     "@nuxtjs/google-fonts": "^3.1.3",

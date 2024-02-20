@@ -1,6 +1,6 @@
 <template>
   <div
-    id="navbar"
+    id="footer"
     class="flex w-full h-14 bg-[#f5f5f5] justify-center items-center"
   >
     {{ new Date().getFullYear() }} - Created by Ivan Kazakov
