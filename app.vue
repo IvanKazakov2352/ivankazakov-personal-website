@@ -10,8 +10,8 @@ useSeoMeta({
   author: 'Ivan Kazakov',
   title: 'Ivan Kazakov',
   ogTitle: 'Ivan Kazakov',
-  description: 'Personal website of developer and product manager Ivan Kazakov!',
-  ogDescription: 'Personal website of developer and product manager Ivan Kazakov!',
+  description: 'Personal website of developer Ivan Kazakov!',
+  ogDescription: 'Personal website of developer Ivan Kazakov!',
   ogImage: "https://objects.ikazakov.com/main.jpg",
   keywords: 'site, Ivan Kazakov, personal, software, programming, resume',
   ogUrl: 'https://ikazakov.com/',
@@ -21,7 +21,7 @@ useSeoMeta({
   ogLocale: 'ru_RU',
   ogType: 'website',
   twitterTitle: 'Ivan Kazakov',
-  twitterDescription: 'Personal website of developer and product manager Ivan Kazakov!',
+  twitterDescription: 'Personal website of developer Ivan Kazakov!',
   twitterImage: "https://objects.ikazakov.com/main.jpg",
   twitterImageAlt: 'Main image',
   charset: 'utf-8',
@@ -30,5 +30,11 @@ useSeoMeta({
   googlebotNews: 'noindex',
   googlebot: 'noarchive',
   google: 'nopagereadaloud'
+})
+useHead({
+  meta: [
+    { property: 'vk:image', content: 'https://objects.ikazakov.com/vk.jpg' },
+    { property: 'fb:image', content: 'https://objects.ikazakov.com/main.jpg' }
+  ]
 })
 </script>
