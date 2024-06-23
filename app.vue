@@ -9,6 +9,7 @@ useSeoMeta({
   applicationName: 'Personal website of Ivan Kazakov',
   author: 'Ivan Kazakov',
   title: 'Ivan Kazakov',
+  creator: 'Ivan Kazakov',
   ogTitle: 'Ivan Kazakov',
   description: 'Personal website of developer Ivan Kazakov!',
   ogDescription: 'Personal website of developer Ivan Kazakov!',
@@ -26,10 +27,7 @@ useSeoMeta({
   twitterImageAlt: 'Main image',
   charset: 'utf-8',
   colorScheme: 'only light',
-  rating: 'adult',
-  googlebotNews: 'noindex',
-  googlebot: 'noarchive',
-  google: 'nopagereadaloud'
+  robots: 'index, follow'
 })
 useHead({
   meta: [
