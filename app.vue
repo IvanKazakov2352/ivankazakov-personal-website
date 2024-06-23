@@ -35,6 +35,10 @@ useHead({
   meta: [
     { property: 'vk:image', content: 'https://objects.ikazakov.com/vk.jpg' },
     { property: 'fb:image', content: 'https://objects.ikazakov.com/main.jpg' }
+  ],
+  link: [
+    { rel: 'icon', type: 'image/png', sizes: '32x32', href: 'https://objects.ikazakov.com/siba-32x32.png' },
+    { rel: 'icon', type: 'image/png', sizes: '16x16', href: 'https://objects.ikazakov.com/siba-16x16.png' },
   ]
 })
 </script>
