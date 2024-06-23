@@ -28,6 +28,8 @@ useSeoMeta({
   charset: 'utf-8',
   colorScheme: 'only light',
   robots: 'index, nofollow, nosnippet, noarchive',
+  googlebot: 'noarchive',
+  googleSiteVerification: 'u9Qh0jlqzzVFIP0SxcbFa5EPQ5shYQmkuAc0m3BX2yo',
   rating: 'adult',
   formatDetection: 'telephone=no'
 })
