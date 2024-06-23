@@ -31,7 +31,16 @@ export default defineNuxtConfig({
   },
   security: {
     headers: {
-      xXSSProtection: "1",
+      contentSecurityPolicy: {
+        'img-src': [
+          'https://objects.ikazakov.com',
+          "'self'",
+          "data:",
+          "'nonce-{{nonce}}'"
+        ],
+      },
+      crossOriginEmbedderPolicy: 'credentialless',
+      xXSSProtection: "1"
     },
     nonce: true,
     hidePoweredBy: true
