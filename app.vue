@@ -27,7 +27,7 @@ useSeoMeta({
   twitterImageAlt: 'Main image',
   charset: 'utf-8',
   colorScheme: 'only light',
-  robots: 'index, follow, nosnippet',
+  robots: 'index, nofollow, nosnippet, noarchive',
   rating: 'adult',
   formatDetection: 'telephone=no'
 })
