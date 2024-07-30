@@ -5,10 +5,23 @@ export default defineNuxtConfig({
     typeCheck: true,
     strict: true
   },
+  site: {
+    url: "https://ikazakov.com",
+    name: "Персональный веб-сайт разработчика и начинающего продукт менеджера - Ивана Казакова!"
+  },
+  sitemap: {
+    enabled: true,
+  },
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+      routes: ['/']
+    }
+  },
   css: ['~/assets/scss/styles.scss'],
   app: {
     head: {
-      link: [{ rel: "icon", type: "image/svg", href: "/siba.svg" }],
+      link: [{ rel: "icon", type: "image/svg", href: "https://cdn.ikazakov.com/siba.svg" }],
       htmlAttrs: {
         lang: "ru",
       },
@@ -33,7 +46,7 @@ export default defineNuxtConfig({
     headers: {
       contentSecurityPolicy: {
         'img-src': [
-          'https://objects.ikazakov.com',
+          'https://cdn.ikazakov.com',
           "'self'",
           "data:",
           "'nonce-{{nonce}}'"
@@ -57,4 +70,14 @@ export default defineNuxtConfig({
       cert: 'localhost.pem'
     }
   },
+  vite: {
+    server: {
+      hmr: {
+        protocol: 'wss',
+        host: 'localhost',
+        port: 443,
+        clientPort: 3000,
+      }
+    }
+  }
 })

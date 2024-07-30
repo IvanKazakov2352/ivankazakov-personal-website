@@ -6,7 +6,7 @@
       <img
         id="siba-inu-two"
         class="h-6 w-6 select-none pointer-events-none"
-        src="/siba.svg"
+        :src="image('siba.svg')"
         alt="siba-inu-two"
       />
       <h1
@@ -18,7 +18,7 @@
     <div class="flex flex-row font-raleway">
       <div>
         Я Fullstack Developer с общим стажем в разработке и проектировании
-        больше 4-х лет!
+        более пяти лет!
       </div>
     </div>
     <div class="flex flex-row font-raleway mt-2 border-b-[1px] pb-2">
@@ -28,7 +28,7 @@
       <img
         id="my-contacts"
         class="h-6 w-6 select-none pointer-events-none"
-        src="/user.png"
+        :src="image('user.png')"
         alt="my-contacts"
       />
       <h3
@@ -42,7 +42,7 @@
       <img
         id="my-github"
         class="h-6 w-6 select-none pointer-events-none"
-        src="/github.svg"
+        :src="image('github.svg')"
         alt="my-github"
       />
       <NuxtLink
@@ -58,7 +58,7 @@
       <img
         id="my-resume"
         class="h-6 w-6 select-none pointer-events-none"
-        src="/resume.png"
+        :src="image('resume.png')"
         alt="my-resume"
       />
       <NuxtLink
@@ -74,7 +74,7 @@
       <img
         id="my-contacts"
         class="h-6 w-6 select-none pointer-events-none"
-        src="/contacts.svg"
+        :src="image('contacts.svg')"
         alt="my-contacts"
       />
       <h3
@@ -88,7 +88,7 @@
       <img
         id="my-gmail"
         class="h-6 w-6 select-none pointer-events-none"
-        src="/gmail.svg"
+        :src="image('gmail.svg')"
         alt="my-gmail"
       />
       <NuxtLink
@@ -103,7 +103,7 @@
       <img
         id="my-vk"
         class="h-6 w-6 select-none pointer-events-none"
-        src="/vk.svg"
+        :src="image('vk.svg')"
         alt="my-vk"
       />
       <NuxtLink
@@ -119,7 +119,7 @@
       <img
         id="my-telegram"
         class="h-6 w-6 select-none pointer-events-none"
-        src="/telegram.svg"
+        :src="image('telegram.svg')"
         alt="my-telegram"
       />
       <NuxtLink
@@ -135,7 +135,7 @@
       <img
         id="working-now"
         class="h-6 w-6 select-none pointer-events-none"
-        src="/office.png"
+        :src="image('office.png')"
         alt="working-now"
       />
       <h3
@@ -149,7 +149,7 @@
       <img
         id="freelance-finder-image"
         class="h-6 w-6 select-none pointer-events-none"
-        src="/ff.jpg"
+        :src="image('ff.jpg')"
         alt="freelance-finder-image"
       />
       <NuxtLink
@@ -169,7 +169,7 @@
       <img
         id="my-companies"
         class="h-6 w-6 select-none pointer-events-none"
-        src="/project.png"
+        :src="image('project.png')"
         alt="my-companies"
       />
       <h3
@@ -183,7 +183,7 @@
       <img
         id="sber-tech"
         class="h-6 w-6 select-none pointer-events-none"
-        src="/sber.jpg"
+        :src="image('sber.jpg')"
         alt="sber-tech"
       />
       <NuxtLink
@@ -220,7 +220,7 @@
       <img
         id="monitel"
         class="h-6 w-6 select-none pointer-events-none"
-        src="/electricity.png"
+        :src="image('electricity.png')"
         alt="monitel"
       />
       <NuxtLink
@@ -256,7 +256,7 @@
       <img
         id="redsoft"
         class="h-6 w-6 select-none pointer-events-none"
-        src="/company.png"
+        :src="image('company.png')"
         alt="redsoft"
       />
       <NuxtLink
@@ -312,7 +312,7 @@
       <img
         id="web-cosmos"
         class="h-6 w-6 select-none pointer-events-none"
-        src="/cosmos.png"
+        :src="image('cosmos.png')"
         alt="web-cosmos"
       />
       <NuxtLink
@@ -335,4 +335,6 @@
     </div>
   </div>
 </template>
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const { image } = useImage()
+</script>
