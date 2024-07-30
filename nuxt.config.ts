@@ -5,10 +5,17 @@ export default defineNuxtConfig({
     typeCheck: true,
     strict: true
   },
+  site: {
+    url: "https://ikazakov.com",
+    name: "Персональный веб-сайт разработчика и начинающего продукт менеджера - Ивана Казакова!"
+  },
+  sitemap: {
+    enabled: true,
+  },
   css: ['~/assets/scss/styles.scss'],
   app: {
     head: {
-      link: [{ rel: "icon", type: "image/svg", href: "https://objects.ikazakov.com/siba.svg" }],
+      link: [{ rel: "icon", type: "image/svg", href: "https://cdn.ikazakov.com/siba.svg" }],
       htmlAttrs: {
         lang: "ru",
       },
@@ -18,6 +25,7 @@ export default defineNuxtConfig({
     "@nuxtjs/google-fonts",
     "@nuxtjs/robots",
     "nuxt-security",
+    '@nuxtjs/sitemap',
   ],
   googleFonts: {
     families: {
@@ -32,7 +40,7 @@ export default defineNuxtConfig({
     headers: {
       contentSecurityPolicy: {
         'img-src': [
-          'https://objects.ikazakov.com',
+          'https://cdn.ikazakov.com',
           "'self'",
           "data:",
           "'nonce-{{nonce}}'"
