@@ -51,6 +51,7 @@ export default defineNuxtConfig({
           "data:",
           "'nonce-{{nonce}}'"
         ],
+        'frame-ancestors': 'self'
       },
       crossOriginEmbedderPolicy: 'credentialless',
       xXSSProtection: "1"
