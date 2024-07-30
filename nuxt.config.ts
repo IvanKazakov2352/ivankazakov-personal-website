@@ -5,13 +5,6 @@ export default defineNuxtConfig({
     typeCheck: true,
     strict: true
   },
-  site: {
-    url: "https://ikazakov.com",
-    name: "Персональный веб-сайт разработчика и начинающего продукт менеджера - Ивана Казакова!"
-  },
-  sitemap: {
-    enabled: true,
-  },
   css: ['~/assets/scss/styles.scss'],
   app: {
     head: {
@@ -25,7 +18,6 @@ export default defineNuxtConfig({
     "@nuxtjs/google-fonts",
     "@nuxtjs/robots",
     "nuxt-security",
-    '@nuxtjs/sitemap',
   ],
   googleFonts: {
     families: {
