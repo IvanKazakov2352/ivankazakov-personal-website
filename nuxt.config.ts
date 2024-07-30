@@ -8,7 +8,7 @@ export default defineNuxtConfig({
   css: ['~/assets/scss/styles.scss'],
   app: {
     head: {
-      link: [{ rel: "icon", type: "image/svg", href: "https://cdn.ikazakov.com/siba.svg" }],
+      link: [{ rel: "icon", type: "image/svg", href: "https://objects.ikazakov.com/siba.svg" }],
       htmlAttrs: {
         lang: "ru",
       },
@@ -32,7 +32,7 @@ export default defineNuxtConfig({
     headers: {
       contentSecurityPolicy: {
         'img-src': [
-          'https://cdn.ikazakov.com',
+          'https://objects.ikazakov.com',
           "'self'",
           "data:",
           "'nonce-{{nonce}}'"
