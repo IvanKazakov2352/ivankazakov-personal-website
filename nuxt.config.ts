@@ -12,12 +12,6 @@ export default defineNuxtConfig({
   sitemap: {
     enabled: true,
   },
-  nitro: {
-    prerender: {
-      crawlLinks: true,
-      routes: ['/']
-    }
-  },
   css: ['~/assets/scss/styles.scss'],
   app: {
     head: {
