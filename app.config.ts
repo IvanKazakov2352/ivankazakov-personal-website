@@ -1,3 +1,3 @@
 export default defineAppConfig({
-  cdnUrl: "https://objects.ikazakov.com/",
+  cdnUrl: "https://cdn.ikazakov.com/",
 });
