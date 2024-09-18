@@ -24,6 +24,7 @@ export default defineNuxtConfig({
   modules: [
     "@nuxtjs/google-fonts",
     "@nuxtjs/robots",
+    "nuxt-security",
     '@nuxtjs/sitemap',
   ],
   googleFonts: {
@@ -34,6 +35,25 @@ export default defineNuxtConfig({
     preload: true,
     preconnect: true,
     useStylesheet: true,
+  },
+  security: {
+    headers: {
+      contentSecurityPolicy: {
+        'img-src': [
+          'https://cdn.ikazakov.com',
+          "'self'",
+          "data:",
+          "'nonce-{{nonce}}'"
+        ],
+        'frame-ancestors': [
+          "'self'"
+        ]
+      },
+      crossOriginEmbedderPolicy: 'credentialless',
+      xXSSProtection: "1"
+    },
+    nonce: true,
+    hidePoweredBy: true
   },
   postcss: {
     plugins: {
