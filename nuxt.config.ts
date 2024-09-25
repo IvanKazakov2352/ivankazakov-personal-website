@@ -1,18 +1,23 @@
 export default defineNuxtConfig({
   devtools: { enabled: false },
   ssr: true,
+
   typescript: {
     typeCheck: true,
     strict: true
   },
+
   site: {
     url: "https://ikazakov.com",
     name: "Персональный веб-сайт разработчика и начинающего продукт менеджера - Ивана Казакова!"
   },
+
   sitemap: {
     enabled: true,
   },
+
   css: ['~/assets/scss/styles.scss'],
+
   app: {
     head: {
       link: [{ rel: "icon", type: "image/svg", href: "https://cdn.ikazakov.com/siba.svg" }],
@@ -21,12 +26,14 @@ export default defineNuxtConfig({
       },
     },
   },
+
   modules: [
     "@nuxtjs/google-fonts",
     "@nuxtjs/robots",
     "nuxt-security",
     '@nuxtjs/sitemap',
   ],
+
   googleFonts: {
     families: {
       Raleway: [100, 200, 300, 400, 500, 600, 700, 800, 900],
@@ -36,6 +43,7 @@ export default defineNuxtConfig({
     preconnect: true,
     useStylesheet: true,
   },
+
   security: {
     headers: {
       contentSecurityPolicy: {
@@ -55,18 +63,21 @@ export default defineNuxtConfig({
     nonce: true,
     hidePoweredBy: true
   },
+
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
     },
   },
+
   devServer: {
     https: {
       key: 'localhost-key.pem',
       cert: 'localhost.pem'
     }
   },
+
   vite: {
     server: {
       hmr: {
@@ -76,5 +87,7 @@ export default defineNuxtConfig({
         clientPort: 3000,
       }
     }
-  }
+  },
+
+  compatibilityDate: "2024-09-25"
 })
