@@ -1,5 +1,6 @@
 {
   "name": "ivan-kazakov-personal-website",
+  "author": "Ivan Kazakov <ivankazakov3344@gmail.com>",
   "private": true,
   "type": "module",
   "scripts": {

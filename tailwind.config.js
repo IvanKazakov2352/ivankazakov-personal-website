@@ -18,7 +18,11 @@ export default {
       '3xl': {min: '1600px', max: '1920px'}, //1600
       '4xl': {min: '1921px'}, //1920
     },
-    extend: {},
+    extend: {
+      colors: {
+        'skill': '#eef1f7'
+      }
+    },
     fontFamily: {
       'raleway': [
         'Raleway',

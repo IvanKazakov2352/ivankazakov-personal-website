@@ -1,5 +1,6 @@
 <template>
-  <div
+  <section
+    id="main-section"
     class="flex flex-col mx-auto max-w-[600px] sm:mx-4 1sm:mx-4 h-auto mt-4"
   >
     <div class="flex flex-row items-center">
@@ -15,14 +16,11 @@
         Иван Казаков
       </h1>
     </div>
-    <div class="flex flex-row font-raleway">
-      <div class="1sm:text-sm">
-        Я Fullstack Developer с общим стажем в разработке и проектировании
+    <div class="flex flex-col font-raleway border-b-[1px] pb-2">
+      <p class="1sm:text-sm">
+        Я Fullstack Developer с общим стажем в разработке и проектировании приложений
         более пяти лет!
-      </div>
-    </div>
-    <div class="flex flex-row font-raleway mt-2 border-b-[1px] pb-2 1sm:text-sm">
-      Языки программирования которые использую для решения технических задач: JavaScript, TypeScript, NodeJS, C#, ASP.NET Core!
+      </p>
     </div>
     <div class="flex flex-row items-center mt-10 border-b-[1px] pb-2">
       <img
@@ -51,6 +49,7 @@
         target="_blank"
         class="ml-3 font-raleway hover:underline hover:underline-offset-4 text-[rgba(55,53,47,.4)] cursor-pointer 1sm:text-sm"
         rel="nofollow"
+        no-prefetch
       >
         GitHub
       </NuxtLink>
@@ -68,6 +67,7 @@
         target="_blank"
         class="ml-3 font-raleway hover:underline hover:underline-offset-4 text-[rgba(55,53,47,.4)] cursor-pointer 1sm:text-sm"
         rel="nofollow"
+        no-prefetch
       >
         Резюме на Head Hunter
       </NuxtLink>
@@ -98,6 +98,7 @@
         tag="a"
         class="ml-3 font-raleway hover:underline hover:underline-offset-4 text-[rgba(55,53,47,.4)] cursor-pointer 1sm:text-sm"
         rel="nofollow"
+        no-prefetch
       >
         ivankazakov3344@gmail.com
       </NuxtLink>
@@ -115,6 +116,7 @@
         target="_blank"
         class="ml-3 font-raleway hover:underline hover:underline-offset-4 text-[rgba(55,53,47,.4)] cursor-pointer 1sm:text-sm"
         rel="nofollow"
+        no-prefetch
       >
         https://vk.com/id612110777
       </NuxtLink>
@@ -132,9 +134,37 @@
         target="_blank"
         class="ml-3 font-raleway hover:underline hover:underline-offset-4 text-[rgba(55,53,47,.4)] cursor-pointer 1sm:text-sm"
         rel="nofollow"
+        no-prefetch
       >
         https://t.me/ivankazakov2233
       </NuxtLink>
+    </div>
+    <div v-if="skills.length" class="flex flex-row items-center mt-10 border-b-[1px] pb-2">
+      <img
+        id="my-skills"
+        class="h-6 w-6 select-none pointer-events-none"
+        :src="image('skills.svg')"
+        alt="my-skills"
+      />
+      <h3
+        class="font-raleway font-bold text-xl whitespace-pre-wrap break-words 1sm:text-sm ml-2"
+        title="Моё резюме и GitHub"
+      >
+        Мои навыки
+      </h3>
+    </div>
+    <div 
+      v-if="skills.length" 
+      class="flex flex-row flex-wrap mt-2 border-b-[1px] pb-2 gap-2"
+    >
+      <div 
+        v-for="skill of skills" 
+        :key="skill.id" 
+        :title="skill.name" 
+        class="flex flex-row bg-slate-300 px-2 rounded-[6px] select-none"
+      >
+        {{ skill.name }}
+      </div>
     </div>
     <div class="flex flex-row items-center mt-10 border-b-[1px] pb-2">
       <img
@@ -239,6 +269,7 @@
         target="_blank"
         class="ml-3 font-raleway hover:underline hover:underline-offset-4 text-[rgba(55,53,47,.4)] cursor-pointer 1sm:text-sm"
         rel="nofollow"
+        no-prefetch
       >
         АО Монитор Электрик
       </NuxtLink>
@@ -257,6 +288,7 @@
         target="_blank"
         class="font-raleway hover:underline hover:underline-offset-4 text-[rgba(55,53,47,.4)] cursor-pointer 1sm:text-sm"
         rel="nofollow"
+        no-prefetch
       >
         Более подробное описание
       </NuxtLink>
@@ -278,6 +310,7 @@
         target="_blank"
         class="ml-3 font-raleway hover:underline hover:underline-offset-4 text-[rgba(55,53,47,.4)] cursor-pointer 1sm:text-sm"
         rel="nofollow"
+        no-prefetch
       >
         Red Soft
       </NuxtLink>
@@ -302,6 +335,7 @@
         target="_blank"
         class="font-raleway hover:underline hover:underline-offset-4 text-[rgba(55,53,47,.4)] cursor-pointer 1sm:text-sm"
         rel="nofollow"
+        no-prefetch
       >
         Сайт ОТП банка
       </NuxtLink>
@@ -313,6 +347,7 @@
         target="_blank"
         class="font-raleway hover:underline hover:underline-offset-4 text-[rgba(55,53,47,.4)] cursor-pointer 1sm:text-sm"
         rel="nofollow"
+        no-prefetch
       >
         НПФ «САФМАР» ныне "Достойное будущее"
       </NuxtLink>
@@ -324,6 +359,7 @@
         target="_blank"
         class="font-raleway hover:underline hover:underline-offset-4 text-[rgba(55,53,47,.4)] cursor-pointer 1sm:text-sm"
         rel="nofollow"
+        no-prefetch
       >
         Уралсиб
       </NuxtLink>
@@ -341,6 +377,7 @@
         target="_blank"
         class="ml-3 font-raleway hover:underline hover:underline-offset-4 text-[rgba(55,53,47,.4)] cursor-pointer 1sm:text-sm"
         rel="nofollow"
+        no-prefetch
       >
         WebCosmos
       </NuxtLink>
@@ -348,14 +385,16 @@
     <div class="flex flex-row font-raleway mt-2 1sm:text-sm">
       Ставропольская компания которая занимается контекстной рекламой и продвижением сайтов
     </div>
-    <div class="flex flex-row font-raleway mt-2 1sm:text-sm">
-      Принимал участие в развитии системы дистанционного образования "СДО PRO" проект не получил жизнь!
-    </div>
     <div class="flex flex-row font-raleway mt-2 mb-14 border-b-[1px] pb-2 1sm:text-sm">
       Занимался разработкой простых лендингов и одностраничных сайтов визиток с использованием HTML, CSS, Bitrix CMS
     </div>
-  </div>
+  </section>
 </template>
 <script setup lang="ts">
 const { image } = useImage()
+const { getSkills, skills } = useSkills()
+
+onMounted(async () => {
+  await getSkills()
+})
 </script>
