@@ -168,41 +168,6 @@
     </div>
     <div class="flex flex-row items-center mt-10 border-b-[1px] pb-2">
       <img
-        id="working-now"
-        class="h-6 w-6 select-none pointer-events-none"
-        :src="image('office.png')"
-        alt="working-now"
-      />
-      <h3
-        class="font-raleway font-bold text-xl whitespace-nowrap break-words text-ellipsis overflow-hidden ml-2 1sm:text-sm"
-        title="Над чем сейчас работаю"
-      >
-        Над чем сейчас работаю
-      </h3>
-    </div>
-    <div class="flex flex-row items-center mt-2">
-      <img
-        id="freelance-finder-image"
-        class="h-6 w-6 select-none pointer-events-none"
-        :src="image('ff.jpg')"
-        alt="freelance-finder-image"
-      />
-      <NuxtLink
-        to="https://vk.com/freelance.finder"
-        tag="a"
-        target="_blank"
-        class="ml-3 font-raleway hover:underline hover:underline-offset-4 text-[rgba(55,53,47,.4)] cursor-pointer 1sm:text-sm"
-        rel="nofollow"
-      >
-        Freelance Finder
-      </NuxtLink>
-    </div>
-    <div class="flex flex-row font-raleway mt-2 border-b-[1px] pb-2 1sm:text-sm">
-      Freelance Finder - это удобная площадка
-      как для специалистов, так и для заказчиков, позволяющая комфортно работать и зарабатывать!
-    </div>
-    <div class="flex flex-row items-center mt-10 border-b-[1px] pb-2">
-      <img
         id="my-companies"
         class="h-6 w-6 select-none pointer-events-none"
         :src="image('project.png')"
@@ -214,47 +179,6 @@
       >
         Компании c которыми работал или работаю
       </h3>
-    </div>
-    <div class="flex flex-row items-center mt-2">
-      <img
-        id="sber-tech"
-        class="h-6 w-6 select-none pointer-events-none"
-        :src="image('sber.jpg')"
-        alt="sber-tech"
-      />
-      <NuxtLink
-        to="https://sbertech.ru/"
-        tag="a"
-        target="_blank"
-        class="ml-3 font-raleway hover:underline hover:underline-offset-4 text-[rgba(55,53,47,.4)] cursor-pointer 1sm:text-sm"
-        rel="nofollow"
-      >
-        SberTech
-      </NuxtLink>
-    </div>
-    <div class="flex flex-row font-raleway mt-2 1sm:text-sm">
-      Разработка некоторых компонентов серверной части на NodeJS для платформ: Школа 21 и Сбер Муза!
-    </div>
-    <div class="flex flex-row font-raleway mt-2">
-      <NuxtLink
-        tag="a"
-        to="https://21-school.ru/"
-        target="_blank"
-        class="font-raleway hover:underline hover:underline-offset-4 text-[rgba(55,53,47,.4)] cursor-pointer 1sm:text-sm"
-      >
-        Школа 21
-      </NuxtLink>
-    </div>
-    <div class="flex flex-row font-raleway mt-2 border-b-[1px] pb-2">
-      <NuxtLink
-        tag="a"
-        to="https://muse.edutoria.ru/"
-        target="_blank"
-        class="font-raleway hover:underline hover:underline-offset-4 text-[rgba(55,53,47,.4)] cursor-pointer 1sm:text-sm"
-        rel="nofollow"
-      >
-        Сбер Муза
-      </NuxtLink>
     </div>
     <div class="flex flex-row items-center mt-2">
       <img
